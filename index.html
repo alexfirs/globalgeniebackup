@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/> 
+    <meta name="Description" content="Globe Genie teleports you to a random spot somewhere across the world."/> 
+    <meta name="keywords" content="travel, world, flight, vacation, europe, brazil, africa, england, japan, hong kong"/> 
+	<meta property="og:title" content="Globe Genie"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="http://www.globegenie.com/"/>
+    <meta property="og:image" content="http://www.globegenie.com/globegenie3.jpg"/>
+    <meta property="og:site_name" content="Globe Genie"/>
+    <meta property="og:description" content="Globe Genie teleports you to a random spot somewhere across the world."/>  
+  
+	<title>Globe Genie</title> 
+	
+  
+  	<link rel="stylesheet" type="text/css" href="globegenie.css">
+	
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAwTWq9u1SQeQuzaAx0rNWg2h8c2I6kISQ&amp;sensor=false"></script>
+	<script type="text/javascript" src="jquery-1.10.2.min.js"></script>
+	<script type="text/javascript" src="globegenie.js"></script>
+	
+  </head>
+  
+  <body onkeydown="hotkey(event)">
+	<!-- panorama -->
+	<div class="left" name="pano" id="pano"></div>
+	
+	
+	<!-- control panel -->
+	<div id="righttop" class="righttop">
+		
+		<span class="title"> Globe Genie </span><br>
+		<span class="subtitle">Virtual teleportation &amp; sharing.</span>
+
+		<form name="continents" class="checkbox">
+			<input type="checkbox" name="continents" value="africa" checked="checked">Africa<br>	    
+			<input type="checkbox" name="continents" value="antarctica" checked="checked">Antarctica <br>			
+			<input type="checkbox" name="continents" value="asia" checked="checked">Asia<br>	
+			<input type="checkbox" name="continents" value="australia" checked="checked">Australia<br>		
+			<input type="checkbox" name="continents" value="europe" checked="checked">Europe<br>
+			<input type="checkbox" name="continents" value="northamerica">North America<br>
+			<input type="checkbox" name="continents" value="southamerica" checked="checked">South America <br>
+		</form>
+		
+		<input id="shuffle" type="button" onclick="next();" value="Teleport"/>&nbsp;&nbsp;&nbsp;<div id="spinner" style="display:inline-block; visibility:hidden;"><img src="spinner.gif"></div>		
+		
+		<!-- auto teleport -->
+		<hr>
+		<b>Auto:</b>&nbsp;&nbsp;
+		<input type="radio" name="autoteleport" id="autooff" value="off" checked>Off<input type="radio" name="autoteleport" id="autoonmed" value="on" onclick="next();">10s<input type="radio" name="autoteleport" id="autoonslow" value="on" onclick="next();">30s<br>
+		<b>Slow Pan:</b>&nbsp;&nbsp;
+		<!-- <input type="radio" name="slowpan" onclick="slowpan_on(false);">Off<input type="radio" name="slowpan" onclick="slowpan_on(true);" checked>On<br> -->
+		<input type="radio" name="slowpan" onclick="slowpan_on(false);" checked>Off<input type="radio" name="slowpan" onclick="slowpan_on(true);">On<br>
+		
+		<!-- show current location -->
+		<hr>
+		<b>Current Location:</b>&nbsp;&nbsp;
+		<input type="checkbox" onclick="document.getElementById('map-canvas').style.visibility = this.checked ? 'visible' : 'hidden';" checked="checked">
+		<p id="location-status" style="display:inline;">On</p>
+		<div class="map-canvas" id="map-canvas"></div>
+	
+
+
+
+	
+  </body>
+</html>

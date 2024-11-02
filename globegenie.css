@@ -1,0 +1,116 @@
+html {
+	height: 100%;
+	}
+
+body{
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+	
+	font-size: 16px;
+	line-height: 18px;
+	}
+	
+div.left{
+	display: block;
+	width: 100%;
+	height: calc(100% - 90px);
+	position: absolute;
+	top: 0;
+	left: 0;
+	float: left;
+	z-index: 1;
+	}
+	
+div.leftbottomright{
+	display: block;
+	width: 80%;
+	height: 90px;
+	position: absolute;
+	bottom: 0;
+	left: 970;
+	float: left;
+	z-index: 2;
+	}	
+
+div.leftbottom{
+	display: block;
+	width: 80%;
+	height: 90px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	float: left;
+	z-index: 2;
+	}
+
+div.righttop{
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	width: 235px;
+	font-family: "Myriad Pro",Segoe UI, Helvetica, Arial,sans-serif;
+	padding: 15px;
+	z-index: 4;
+	/* background-color:rgba(0,0,0,0.65); */
+	background-color:rgba(255,255,255,0.85);
+	}
+
+div.map-canvas{
+	display: block;
+	width: 100%;
+	height: 155px;
+	}
+	
+span.title {
+	color: #007730;
+	font-weight: bold;
+	font-size: 21pt;
+	position: bottom;
+	line-height: 40px;
+	}
+	
+span.subtitle {
+	color: #007730;
+	font-size: 13.5pt;
+	position: bottom;
+	}
+	
+.links {
+	color: #007730;
+	font-size: 11pt;
+	position: bottom;
+	}
+	
+.checkbox{
+	padding-left: 15px;
+	}
+
+#shuffle {
+	font-family:"Lucida Grande","Lucida Sans Unicode",Arial,Verdana,sans-serif; 
+	font-size: 16px;
+	font-weight: normal;
+	line-height: 20px;
+	margin-bottom: 10px;
+	}
+
+/*
+     FILE ARCHIVED ON 22:08:08 Jan 22, 2024 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 07:35:54 Nov 02, 2024.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.505
+  exclusion.robots: 0.034
+  exclusion.robots.policy: 0.024
+  esindex: 0.008
+  cdx.remote: 7.615
+  LoadShardBlock: 201.324 (3)
+  PetaboxLoader3.datanode: 134.388 (4)
+  PetaboxLoader3.resolve: 187.218 (2)
+  load_resource: 171.429
+*/
