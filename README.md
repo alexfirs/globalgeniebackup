@@ -16,7 +16,7 @@ docker pull alexfirs/globegeniebackup
 ```
 run it
 ```
-docker run -d -p 8080:80 globegeniebackup
+docker run -d -p 8080:8080 globegeniebackup
 ```
 and surf to http://localhost:8080/
 
