@@ -6,19 +6,20 @@ Many, many years ago I found the Globegenie project - at that time, 2010, it was
 
 ## Usage
 ### Docker
-Build docker image using
+Build docker image locally and run 
 ```
 docker build -t globegeniebackup .
-```
-**or** download compiled one 
-```
-docker pull alexfirs/globegeniebackup
-```
-run it
-```
 docker run -d -p 8080:80 globegeniebackup
 ```
+**or** download and run it from Dockerhub
+```
+docker pull alexfirs/globegeniebackup:latest
+docker run -d -p 8080:80 alexfirs/globegeniebackup:latest
+```
 and surf to http://localhost:8080/
+
+### Http server
+You don't need to use docker/kubernetes, just serve static files with any http server such as IIS, Apache, nginx or any other you want. There's no business logic, just static html, styles and some javascript to integrate with google maps which runs by your browser
 
 # Licensing
 I'm not sure about the licensing here - meanwhile I'm trying to reach the original author Joseph G. McMichael http://www.joemcmichael.com/

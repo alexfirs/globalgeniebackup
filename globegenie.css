@@ -14,7 +14,7 @@ body{
 div.left{
 	display: block;
 	width: 100%;
-	height: calc(100% - 90px);
+	height: 100%;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -94,23 +94,3 @@ span.subtitle {
 	margin-bottom: 10px;
 	}
 
-/*
-     FILE ARCHIVED ON 22:08:08 Jan 22, 2024 AND RETRIEVED FROM THE
-     INTERNET ARCHIVE ON 07:35:54 Nov 02, 2024.
-     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
-
-     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
-     SECTION 108(a)(3)).
-*/
-/*
-playback timings (ms):
-  captures_list: 0.505
-  exclusion.robots: 0.034
-  exclusion.robots.policy: 0.024
-  esindex: 0.008
-  cdx.remote: 7.615
-  LoadShardBlock: 201.324 (3)
-  PetaboxLoader3.datanode: 134.388 (4)
-  PetaboxLoader3.resolve: 187.218 (2)
-  load_resource: 171.429
-*/
